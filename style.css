@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background-color: #050505;
+    /* Deep dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+canvas {
+    image-rendering: pixelated;
+    /* Crucial for that crisp Diablo/Pixel art look */
+    box-shadow: 0 0 50px rgba(100, 0, 0, 0.2);
+    /* Background is now handled in Game.js */
+}

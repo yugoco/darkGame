@@ -1,0 +1,23 @@
+// Environment
+'0,0,0': { type: 'wall' },              // Black: Wall
+'255,255,255': { type: 'floor' },       // White: Floor
+            
+// Logic/ Zones
+'0,255,0': { type: 'zone_patrol' },     // Green: Patrol Zone
+'255,255,0': { type: 'marker' },        // Yellow: Direction Marker
+'0,0,255': { type: 'spawn' },           // Blue: Player Spawn
+'0,255,255': { type: 'exit' },          // Cyan: Extraction (Win Condition)
+'0,0,100': { type: 'trigger' },         // Dark Blue: Invisible Trigger
+
+// Props
+'139,69,19': { type: 'door' },          // Brown: Door
+'128,128,128': { type: 'crate' },       // Grey: Crate/Table
+            
+// Interact
+'128,0,128': { type: 'hub_start' },     // Dark Purple: Hub next level
+'0,128,128': { type: 'stairs' },        // Teal: Stairs (Next Floor)
+
+// Enemies
+'255,0,0': { type: 'enemy', behavior: 'SENTRY' },    // Red
+'255,0,255': { type: 'enemy', behavior: 'ROAMER' },  // Magenta
+'255,128,0': { type: 'enemy', behavior: 'GUARD' }    // Orange
